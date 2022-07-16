@@ -44,7 +44,7 @@ const Navbar = () => {
             value={searchValue}
             onChange={(e) => setSearchValue(e.target.value)}
             className="bg-primary p-3 md:text-md font-medium border-2 border-gray-100 focus:outline-none focus:border-2 focus:border-gray-300 w-[300px] md:w-[350px] rounded-full  md:top-0"
-            placeholder="Search"
+            placeholder="Search accounts and videos"
           />
           <button
             onClick={handleSearch}
@@ -59,7 +59,7 @@ const Navbar = () => {
           <div className="flex gap-5 md:gap-10">
             <Link href="/upload">
               <button className="border-2 px-2 md:px-4 text-md font-semibold flex items-center gap-2">
-                <IoMdAdd className="text-xl" /> <span className="hidden md:block">Upload</span>
+                <IoMdAdd className="text-xl" /> <span className="hidden md:block">Upload </span>
               </button>
             </Link>
             {user.image && (
